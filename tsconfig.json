@@ -48,10 +48,10 @@
   "include": [
     "src"
   ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "jest.config.ts",
-    "**/*.test.ts",
-  ]
+  //"exclude": [
+    //"node_modules",
+    //"dist",
+    //"jest.config.ts",
+    //"**/*.test.ts",
+  //]
 }
