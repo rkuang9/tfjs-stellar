@@ -13,7 +13,7 @@ An extension of TensorFlow.js for implementing large language models.
 - TokenAndPositionalEmbedding
 
 > **Warning**:
-> These layers are not one-to-one replications of the TensorFlow Keras equivalents
+> These layers are not compatible with the TensorFlow Keras equivalent.
 
 
 ## Models
