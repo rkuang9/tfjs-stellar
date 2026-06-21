@@ -26,5 +26,9 @@
   },
   "peerDependencies": {
     "@tensorflow/tfjs": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rkuang9/tfjs-stellar.git"
   }
 }
