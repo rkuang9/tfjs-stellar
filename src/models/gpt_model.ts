@@ -36,8 +36,8 @@ export interface GptModelArgs extends LlmModelArgs {
 
 
 /**
- * This is a subclass of tf.Sequential that creating a GPT-like model and
- * automatically handles padding (and masking) the vocab size for hardware
+ * This is a subclass of tf.Sequential that simplifies creating a GPT-like model
+ * and automatically handles padding (and masking) the vocab size for hardware
  * efficiency.
  * 
  * Example:
