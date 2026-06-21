@@ -1,6 +1,6 @@
 import * as tf from "@tensorflow/tfjs";
 
-import { TransformerEncoder } from "@/layers/transformer_encoder";
+import { TransformerEncoder } from "../layers/transformer_encoder";
 
 // disables warning for using the faster node backend,
 // https://github.com/tensorflow/tfjs/issues/5349#issuecomment-885170504

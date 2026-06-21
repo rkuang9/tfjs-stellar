@@ -2,7 +2,7 @@ import * as tf from '@tensorflow/tfjs';
 import { type LayerArgs } from '@tensorflow/tfjs-layers/dist/engine/topology';
 import { type Kwargs } from '@tensorflow/tfjs-layers/dist/types';
 
-import { PositionalEncoding, type PositionalEncodingArgs } from '@/layers/positional_encoding';
+import { PositionalEncoding, type PositionalEncodingArgs } from '../layers/positional_encoding';
 
 
 export interface TokenAndPositionalEmbeddingArgs extends LayerArgs, PositionalEncodingArgs {

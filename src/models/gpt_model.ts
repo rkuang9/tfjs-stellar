@@ -1,9 +1,9 @@
 import * as tf from "@tensorflow/tfjs";
-import * as tfc from "@/.";
-import { type LossOrMetricFn } from "@/tfjs_types";
-import { LlmModel, type LlmModelArgs } from "@/models/llm_model";
-import { KvCacheContainer } from "@/kv_cache";
+import { type LossOrMetricFn } from "../tfjs_types";
+import { LlmModel, type LlmModelArgs } from "../models/llm_model";
+import { KvCacheContainer } from "../kv_cache";
 import { type DisposeResult } from "@tensorflow/tfjs-layers/dist/engine/topology";
+import { GPT2DecoderBlock } from "../layers/gpt_decoder_block";
 
 
 export interface GptModelArgs extends LlmModelArgs {
@@ -182,7 +182,7 @@ export class GptModel extends LlmModel {
         if (this.layers.length == 0) {
             [
                 tf.layers.embedding({ inputDim: actual_vocab_size, outputDim: this.embedDim, batchInputShape: [null, null] }),
-                ...Array(this.numLayers).fill(0).map(_ => tfc.gpt2DecoderBlock({ numHeads: this.numHeads, embedDim: this.embedDim })),
+                ...Array(this.numLayers).fill(0).map(_ => new GPT2DecoderBlock({ numHeads: this.numHeads, embedDim: this.embedDim })),
                 tf.layers.dense({ units: actual_vocab_size })
             ].forEach(layer => this.add(layer))
         }

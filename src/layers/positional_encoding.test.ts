@@ -1,6 +1,6 @@
 import * as tf from '@tensorflow/tfjs';
 
-import { PositionalEncoding } from '@/layers/positional_encoding';
+import { PositionalEncoding } from '../layers/positional_encoding';
 
 // disables warning for using the faster node backend,
 // https://github.com/tensorflow/tfjs/issues/5349#issuecomment-885170504

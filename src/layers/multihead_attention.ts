@@ -1,7 +1,7 @@
 import * as tf from '@tensorflow/tfjs';
 import { type LayerArgs } from '@tensorflow/tfjs-layers/dist/engine/topology';
 import { type Kwargs } from '@tensorflow/tfjs-layers/dist/types';
-import { causal as generateCausalMask } from "@/masks";
+import { causal as generateCausalMask } from "../masks";
 
 
 export interface MultiHeadAttentionArgs extends LayerArgs {

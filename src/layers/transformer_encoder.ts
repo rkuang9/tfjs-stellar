@@ -2,7 +2,7 @@ import * as tf from "@tensorflow/tfjs";
 import { type Kwargs } from "@tensorflow/tfjs-layers/dist/types";
 import { type ActivationIdentifier } from "@tensorflow/tfjs-layers/dist/keras_format/activation_config";
 
-import { MultiHeadAttention, type MultiHeadAttentionArgs } from "@/layers/multihead_attention";
+import { MultiHeadAttention, type MultiHeadAttentionArgs } from "../layers/multihead_attention";
 
 
 export interface TransformerEncoderArgs extends MultiHeadAttentionArgs {

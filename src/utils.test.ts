@@ -1,6 +1,6 @@
 import * as tf from "@tensorflow/tfjs";
-import { getScaleShape, getRandomCropStart } from "@/utils";
-import { causal } from "@/masks";
+import { getScaleShape, getRandomCropStart } from "./utils";
+import { causal } from "./masks";
 
 // avoid TFJS node message during Jest testing
 tf.env().set('IS_NODE', false);

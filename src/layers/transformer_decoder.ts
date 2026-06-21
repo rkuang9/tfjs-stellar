@@ -2,8 +2,8 @@ import * as tf from "@tensorflow/tfjs";
 import { type Kwargs } from "@tensorflow/tfjs-layers/dist/types";
 import { type ActivationIdentifier } from "@tensorflow/tfjs-layers/dist/keras_format/activation_config";
 
-import { type MultiHeadAttentionArgs } from "@/layers/multihead_attention";
-import { CachedRoPEMultiHeadAttention } from "@/layers/cached_rope_multihead_attention";
+import { type MultiHeadAttentionArgs } from "../layers/multihead_attention";
+import { CachedRoPEMultiHeadAttention } from "../layers/cached_rope_multihead_attention";
 
 
 export interface TransformerDecoderArgs extends Omit<MultiHeadAttentionArgs, "causal"> {

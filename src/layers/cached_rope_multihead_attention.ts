@@ -1,7 +1,7 @@
 import * as tf from '@tensorflow/tfjs';
-import { KvCacheContainer } from "@/kv_cache";
-import { MultiHeadAttention, type MultiHeadAttentionArgs } from '@/layers/multihead_attention';
-import { RotaryPositionEmbedding } from '@/layers/rotary_position_embedding';
+import { KvCacheContainer } from "../kv_cache";
+import { MultiHeadAttention, type MultiHeadAttentionArgs } from '../layers/multihead_attention';
+import { RotaryPositionEmbedding } from '../layers/rotary_position_embedding';
 import { type Kwargs } from '@tensorflow/tfjs-layers/dist/types';
 
 

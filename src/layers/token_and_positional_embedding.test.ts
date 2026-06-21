@@ -1,6 +1,6 @@
 import * as tf from '@tensorflow/tfjs';
 
-import { TokenAndPositionalEmbedding } from '@/layers/token_and_positional_embedding';
+import { TokenAndPositionalEmbedding } from '../layers/token_and_positional_embedding';
 
 // disables warning for using the faster node backend,
 // https://github.com/tensorflow/tfjs/issues/5349#issuecomment-885170504

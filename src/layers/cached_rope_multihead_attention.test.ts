@@ -1,7 +1,7 @@
 import * as tf from '@tensorflow/tfjs';
 
-import { KvCacheContainer } from '@/kv_cache';
-import { CachedRoPEMultiHeadAttention } from '@/layers/cached_rope_multihead_attention';
+import { KvCacheContainer } from '../kv_cache';
+import { CachedRoPEMultiHeadAttention } from '../layers/cached_rope_multihead_attention';
 
 
 // disables warning for using the faster node backend,

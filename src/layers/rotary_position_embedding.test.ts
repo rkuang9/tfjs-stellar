@@ -1,4 +1,4 @@
-import { RotaryPositionEmbedding } from "@/layers/rotary_position_embedding";
+import { RotaryPositionEmbedding } from "../layers/rotary_position_embedding";
 import * as tf from "@tensorflow/tfjs";
 
 // disables warning for using the faster node backend,

@@ -1,8 +1,8 @@
 import * as tf from '@tensorflow/tfjs';
 
-import { CachedRoPEMultiHeadAttention } from '@/layers/cached_rope_multihead_attention';
-import { causal as generateCausalMask } from "@/masks";
-import { MultiHeadAttention } from '@/layers/multihead_attention';
+import { CachedRoPEMultiHeadAttention } from '../layers/cached_rope_multihead_attention';
+import { causal as generateCausalMask } from "../masks";
+import { MultiHeadAttention } from '../layers/multihead_attention';
 
 // disables warning for using the faster node backend,
 // https://github.com/tensorflow/tfjs/issues/5349#issuecomment-885170504

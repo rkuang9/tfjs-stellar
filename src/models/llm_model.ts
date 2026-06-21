@@ -1,9 +1,9 @@
 import * as tf from "@tensorflow/tfjs";
-import * as tfc from "@/index";
 import { sparseCategoricalCrossentropy } from "@tensorflow/tfjs-layers/dist/losses";
-import { Dataset, type LossOrMetricFn } from "@/tfjs_types";
-import { causal as generateCausalMask } from "@/masks";
-import { KvCacheContainer } from "@/kv_cache";
+import { Dataset, type LossOrMetricFn } from "../tfjs_types";
+import { causal as generateCausalMask } from "../masks";
+import { KvCacheContainer } from "../kv_cache";
+import * as losses from "../losses";
 
 
 // eslint-disable-next-line
@@ -74,7 +74,7 @@ export class LlmModel extends tf.Sequential {
             const loss_id = loss as string;
 
             const loss_fn =
-                ((tfc.losses as Record<string, any>)[loss_id] ??
+                ((losses as Record<string, any>)[loss_id] ??
                     (tf.losses as Record<string, any>)[loss_id] ??
                     (tf.metrics as Record<string, any>)[loss_id]) as LossOrMetricFn
 

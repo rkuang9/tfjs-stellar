@@ -1,8 +1,8 @@
 import * as tf from "@tensorflow/tfjs";
 import { type Kwargs } from "@tensorflow/tfjs-layers/dist/types";
 
-import { type MultiHeadAttentionArgs } from "@/layers/multihead_attention";
-import { TransformerDecoder, type TransformerDecoderArgs } from "@/layers/transformer_decoder";
+import { type MultiHeadAttentionArgs } from "../layers/multihead_attention";
+import { TransformerDecoder, type TransformerDecoderArgs } from "../layers/transformer_decoder";
 
 
 export interface GPTDecoderBlockArgs extends Omit<MultiHeadAttentionArgs, "causal"> {
