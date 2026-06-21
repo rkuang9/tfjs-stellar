@@ -1,6 +1,6 @@
 {
   "name": "@stellarapp/tfjs-stellar",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "An extension of TensorFlow.js for implementing large language models.",
   "license": "ISC",
   "author": "",
