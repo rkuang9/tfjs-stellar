@@ -1,0 +1,29 @@
+{
+  "name": "@stellarapp/tfjs-stellar",
+  "version": "1.0.0",
+  "description": "An extension of TensorFlow.js for implementing large language models.",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "npx jest",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@tensorflow/tfjs": "^4.22.0",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^26.0.0",
+    "globals": "^17.6.0",
+    "jest": "^30.4.2",
+    "ts-jest": "^29.4.11",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  },
+  "peerDependencies": {
+    "@tensorflow/tfjs": "*"
+  }
+}
