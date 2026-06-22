@@ -10,6 +10,16 @@ export interface KvCacheArgs {
 }
 
 
+export function kvCacheContainer(maxSequenceLength: number) {
+    return new KvCacheContainer(maxSequenceLength);
+}
+
+
+export function kvCache(args: KvCacheArgs) {
+    return new KvCache(args);
+}
+
+
 /**
  * A container for KV caches. A model should initialize one KV cache
  */

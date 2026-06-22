@@ -1,7 +1,11 @@
 import { LlmModel, type LlmModelArgs } from "./llm_model";
 import { GptModel, type GptModelArgs } from "../models/gpt_model";
-import { createUNet, type UNetArgs } from "../models/u_net";
-
+import { createUNet, UNetModel, type UNetArgs } from "../models/u_net";
+export {
+    LlmModel, LlmModelArgs,
+    GptModel, GptModelArgs,
+    UNetModel, UNetArgs
+}
 
 export function llmModel(args: LlmModelArgs) {
     return new LlmModel(args);
