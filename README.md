@@ -45,3 +45,20 @@ gpt_model.summary();
 // on how to create a generator dataset
 //gpt_model.fitDataset(your_generator_dataset, { epochs: 1 });
 ```
+
+## Jest Unit Testing
+
+If you plan to use this library in your Jest unit tests, you may need to add the following configurations to your `jest.config.ts` file's `config`
+
+```ts
+// A map from regular expressions to paths to transformers
+transform: {
+    '^.+\\.[jt]s?$': ["ts-jest", {
+        useESM: true,
+    }]
+},
+
+transformIgnorePatterns: [
+    "/node_modules/(?!(@stellarapp/tfjs-stellar|@tensorflow/tfjs))"
+],
+```
