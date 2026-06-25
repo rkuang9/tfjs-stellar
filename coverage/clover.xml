@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1782355266574" clover="3.2.0">
+  <project timestamp="1782355266574" name="All files">
+    <metrics statements="481" coveredstatements="455" conditionals="186" coveredconditionals="170" methods="87" coveredmethods="76" elements="754" coveredelements="701" complexity="0" loc="481" ncloc="481" packages="2" files="10" classes="10"/>
+    <package name="src">
+      <metrics statements="85" coveredstatements="65" conditionals="15" coveredconditionals="12" methods="26" coveredmethods="15"/>
+      <file name="kv_cache.ts" path="/Volumes/D/dev/tfjs-stellar/src/kv_cache.ts">
+        <metrics statements="63" coveredstatements="46" conditionals="11" coveredconditionals="8" methods="20" coveredmethods="10"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="5" type="stmt"/>
+        <line num="32" count="5" type="cond" truecount="1" falsecount="1"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="36" count="5" type="stmt"/>
+        <line num="41" count="10" type="stmt"/>
+        <line num="46" count="10" type="stmt"/>
+        <line num="54" count="67" type="stmt"/>
+        <line num="56" count="67" type="cond" truecount="2" falsecount="0"/>
+        <line num="57" count="10" type="stmt"/>
+        <line num="60" count="57" type="stmt"/>
+        <line num="65" count="56" type="stmt"/>
+        <line num="66" count="56" type="stmt"/>
+        <line num="69" count="56" type="stmt"/>
+        <line num="73" count="56" type="stmt"/>
+        <line num="82" count="0" type="stmt"/>
+        <line num="83" count="0" type="stmt"/>
+        <line num="89" count="0" type="stmt"/>
+        <line num="90" count="0" type="stmt"/>
+        <line num="97" count="8" type="cond" truecount="1" falsecount="1"/>
+        <line num="102" count="0" type="stmt"/>
+        <line num="107" count="1" type="stmt"/>
+        <line num="113" count="10" type="stmt"/>
+        <line num="121" count="10" type="stmt"/>
+        <line num="123" count="10" type="stmt"/>
+        <line num="124" count="10" type="stmt"/>
+        <line num="126" count="10" type="stmt"/>
+        <line num="127" count="10" type="stmt"/>
+        <line num="128" count="10" type="stmt"/>
+        <line num="129" count="10" type="stmt"/>
+        <line num="137" count="57" type="stmt"/>
+        <line num="138" count="57" type="stmt"/>
+        <line num="140" count="57" type="cond" truecount="1" falsecount="1"/>
+        <line num="141" count="0" type="stmt"/>
+        <line num="145" count="57" type="cond" truecount="2" falsecount="0"/>
+        <line num="146" count="1" type="stmt"/>
+        <line num="149" count="56" type="stmt"/>
+        <line num="150" count="56" type="stmt"/>
+        <line num="152" count="56" type="stmt"/>
+        <line num="153" count="56" type="stmt"/>
+        <line num="155" count="56" type="stmt"/>
+        <line num="156" count="56" type="stmt"/>
+        <line num="159" count="56" type="stmt"/>
+        <line num="161" count="56" type="stmt"/>
+        <line num="169" count="112" type="stmt"/>
+        <line num="171" count="112" type="stmt"/>
+        <line num="173" count="112" type="stmt"/>
+        <line num="177" count="112" type="stmt"/>
+        <line num="184" count="112" type="stmt"/>
+        <line num="190" count="0" type="stmt"/>
+        <line num="192" count="0" type="stmt"/>
+        <line num="193" count="0" type="stmt"/>
+        <line num="194" count="0" type="stmt"/>
+        <line num="196" count="0" type="stmt"/>
+        <line num="197" count="0" type="stmt"/>
+        <line num="203" count="0" type="stmt"/>
+        <line num="204" count="0" type="stmt"/>
+        <line num="212" count="120" type="stmt"/>
+      </file>
+      <file name="masks.ts" path="/Volumes/D/dev/tfjs-stellar/src/masks.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="1" count="5" type="stmt"/>
+        <line num="9" count="5" type="stmt"/>
+        <line num="10" count="26" type="stmt"/>
+        <line num="27" count="5" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="34" count="2" type="stmt"/>
+      </file>
+      <file name="utils.ts" path="/Volumes/D/dev/tfjs-stellar/src/utils.ts">
+        <metrics statements="15" coveredstatements="12" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="2"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="9" type="stmt"/>
+        <line num="14" count="9" type="stmt"/>
+        <line num="25" count="9" type="stmt"/>
+        <line num="26" count="9" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="41" count="202" type="stmt"/>
+        <line num="42" count="202" type="stmt"/>
+        <line num="44" count="202" type="cond" truecount="4" falsecount="0"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="51" count="201" type="stmt"/>
+        <line num="68" count="1" type="stmt"/>
+        <line num="69" count="0" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
+        <line num="73" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.layers">
+      <metrics statements="396" coveredstatements="390" conditionals="171" coveredconditionals="158" methods="61" coveredmethods="61"/>
+      <file name="cached_rope_multihead_attention.ts" path="/Volumes/D/dev/tfjs-stellar/src/layers/cached_rope_multihead_attention.ts">
+        <metrics statements="33" coveredstatements="33" conditionals="8" coveredconditionals="8" methods="6" coveredmethods="6"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="22" count="39" type="stmt"/>
+        <line num="23" count="37" type="stmt"/>
+        <line num="35" count="89" type="stmt"/>
+        <line num="36" count="89" type="stmt"/>
+        <line num="39" count="89" type="stmt"/>
+        <line num="41" count="89" type="stmt"/>
+        <line num="43" count="89" type="stmt"/>
+        <line num="44" count="89" type="stmt"/>
+        <line num="45" count="89" type="stmt"/>
+        <line num="47" count="89" type="cond" truecount="4" falsecount="0"/>
+        <line num="49" count="57" type="stmt"/>
+        <line num="52" count="56" type="stmt"/>
+        <line num="53" count="56" type="stmt"/>
+        <line num="57" count="88" type="stmt"/>
+        <line num="63" count="87" type="stmt"/>
+        <line num="67" count="87" type="stmt"/>
+        <line num="73" count="57" type="stmt"/>
+        <line num="74" count="57" type="stmt"/>
+        <line num="76" count="56" type="cond" truecount="2" falsecount="0"/>
+        <line num="77" count="10" type="stmt"/>
+        <line num="83" count="10" type="stmt"/>
+        <line num="86" count="56" type="stmt"/>
+        <line num="88" count="1" type="stmt"/>
+        <line num="97" count="89" type="stmt"/>
+        <line num="98" count="89" type="stmt"/>
+        <line num="100" count="89" type="stmt"/>
+        <line num="101" count="89" type="stmt"/>
+        <line num="113" count="3" type="stmt"/>
+      </file>
+      <file name="multihead_attention.ts" path="/Volumes/D/dev/tfjs-stellar/src/layers/multihead_attention.ts">
+        <metrics statements="90" coveredstatements="87" conditionals="59" coveredconditionals="54" methods="14" coveredmethods="14"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="51" count="4" type="stmt"/>
+        <line num="52" count="4" type="stmt"/>
+        <line num="68" count="47" type="stmt"/>
+        <line num="70" count="47" type="cond" truecount="2" falsecount="0"/>
+        <line num="71" count="3" type="stmt"/>
+        <line num="74" count="44" type="stmt"/>
+        <line num="75" count="44" type="stmt"/>
+        <line num="76" count="44" type="stmt"/>
+        <line num="77" count="44" type="stmt"/>
+        <line num="78" count="44" type="stmt"/>
+        <line num="80" count="44" type="cond" truecount="1" falsecount="1"/>
+        <line num="81" count="0" type="stmt"/>
+        <line num="86" count="44" type="stmt"/>
+        <line num="87" count="44" type="stmt"/>
+        <line num="88" count="44" type="stmt"/>
+        <line num="89" count="44" type="stmt"/>
+        <line num="107" count="108" type="cond" truecount="2" falsecount="0"/>
+        <line num="108" count="89" type="stmt"/>
+        <line num="112" count="108" type="cond" truecount="4" falsecount="0"/>
+        <line num="113" count="1" type="stmt"/>
+        <line num="116" count="107" type="stmt"/>
+        <line num="117" count="120" type="cond" truecount="2" falsecount="0"/>
+        <line num="118" count="11" type="stmt"/>
+        <line num="122" count="96" type="stmt"/>
+        <line num="123" count="96" type="cond" truecount="2" falsecount="0"/>
+        <line num="124" count="96" type="cond" truecount="2" falsecount="0"/>
+        <line num="126" count="96" type="cond" truecount="2" falsecount="0"/>
+        <line num="149" count="7" type="stmt"/>
+        <line num="150" count="7" type="stmt"/>
+        <line num="153" count="7" type="stmt"/>
+        <line num="157" count="7" type="stmt"/>
+        <line num="160" count="7" type="stmt"/>
+        <line num="166" count="7" type="stmt"/>
+        <line num="169" count="7" type="stmt"/>
+        <line num="178" count="96" type="stmt"/>
+        <line num="179" count="96" type="stmt"/>
+        <line num="192" count="7" type="stmt"/>
+        <line num="193" count="7" type="stmt"/>
+        <line num="195" count="7" type="stmt"/>
+        <line num="196" count="7" type="stmt"/>
+        <line num="227" count="99" type="stmt"/>
+        <line num="228" count="99" type="cond" truecount="1" falsecount="0"/>
+        <line num="230" count="99" type="stmt"/>
+        <line num="231" count="391" type="cond" truecount="2" falsecount="0"/>
+        <line num="232" count="1" type="stmt"/>
+        <line num="241" count="98" type="stmt"/>
+        <line num="245" count="98" type="stmt"/>
+        <line num="247" count="98" type="cond" truecount="4" falsecount="0"/>
+        <line num="248" count="25" type="cond" truecount="4" falsecount="0"/>
+        <line num="249" count="2" type="stmt"/>
+        <line num="254" count="23" type="cond" truecount="1" falsecount="1"/>
+        <line num="255" count="0" type="stmt"/>
+        <line num="257" count="23" type="stmt"/>
+        <line num="261" count="96" type="cond" truecount="2" falsecount="0"/>
+        <line num="262" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="265" count="0" type="stmt"/>
+        <line num="269" count="1" type="stmt"/>
+        <line num="279" count="96" type="stmt"/>
+        <line num="284" count="96" type="cond" truecount="2" falsecount="0"/>
+        <line num="287" count="1" type="stmt"/>
+        <line num="290" count="96" type="stmt"/>
+        <line num="292" count="96" type="cond" truecount="1" falsecount="1"/>
+        <line num="293" count="96" type="stmt"/>
+        <line num="295" count="96" type="stmt"/>
+        <line num="301" count="34" type="stmt"/>
+        <line num="303" count="34" type="cond" truecount="4" falsecount="0"/>
+        <line num="304" count="3" type="stmt"/>
+        <line num="306" count="31" type="stmt"/>
+        <line num="309" count="34" type="cond" truecount="4" falsecount="0"/>
+        <line num="310" count="1" type="stmt"/>
+        <line num="314" count="33" type="stmt"/>
+        <line num="315" count="33" type="stmt"/>
+        <line num="316" count="33" type="stmt"/>
+        <line num="317" count="33" type="stmt"/>
+        <line num="322" count="33" type="stmt"/>
+        <line num="331" count="33" type="stmt"/>
+        <line num="333" count="33" type="stmt"/>
+        <line num="334" count="260" type="stmt"/>
+        <line num="335" count="260" type="stmt"/>
+        <line num="336" count="260" type="stmt"/>
+        <line num="337" count="260" type="stmt"/>
+        <line num="340" count="33" type="stmt"/>
+        <line num="348" count="6" type="cond" truecount="3" falsecount="1"/>
+        <line num="353" count="11" type="stmt"/>
+        <line num="355" count="11" type="stmt"/>
+        <line num="364" count="11" type="stmt"/>
+        <line num="366" count="11" type="stmt"/>
+        <line num="371" count="4" type="stmt"/>
+      </file>
+      <file name="positional_encoding.ts" path="/Volumes/D/dev/tfjs-stellar/src/layers/positional_encoding.ts">
+        <metrics statements="42" coveredstatements="42" conditionals="16" coveredconditionals="15" methods="7" coveredmethods="7"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="32" count="19" type="stmt"/>
+        <line num="34" count="19" type="cond" truecount="2" falsecount="0"/>
+        <line num="35" count="19" type="stmt"/>
+        <line num="37" count="19" type="cond" truecount="2" falsecount="0"/>
+        <line num="38" count="3" type="stmt"/>
+        <line num="42" count="16" type="cond" truecount="2" falsecount="0"/>
+        <line num="43" count="2" type="stmt"/>
+        <line num="48" count="14" type="stmt"/>
+        <line num="59" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="60" count="9" type="stmt"/>
+        <line num="62" count="9" type="cond" truecount="4" falsecount="0"/>
+        <line num="63" count="3" type="stmt"/>
+        <line num="67" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="69" count="2" type="stmt"/>
+        <line num="75" count="4" type="stmt"/>
+        <line num="76" count="4" type="stmt"/>
+        <line num="88" count="8" type="stmt"/>
+        <line num="89" count="8" type="stmt"/>
+        <line num="93" count="8" type="stmt"/>
+        <line num="103" count="8" type="stmt"/>
+        <line num="105" count="8" type="stmt"/>
+        <line num="107" count="8" type="stmt"/>
+        <line num="108" count="8" type="stmt"/>
+        <line num="114" count="8" type="stmt"/>
+        <line num="115" count="8" type="stmt"/>
+        <line num="116" count="8" type="stmt"/>
+        <line num="117" count="8" type="stmt"/>
+        <line num="119" count="8" type="stmt"/>
+        <line num="120" count="102" type="stmt"/>
+        <line num="122" count="102" type="cond" truecount="1" falsecount="1"/>
+        <line num="126" count="102" type="stmt"/>
+        <line num="131" count="8" type="stmt"/>
+        <line num="134" count="8" type="stmt"/>
+        <line num="139" count="2" type="stmt"/>
+        <line num="144" count="1" type="stmt"/>
+        <line num="146" count="1" type="stmt"/>
+        <line num="151" count="1" type="stmt"/>
+        <line num="153" count="1" type="stmt"/>
+        <line num="158" count="2" type="stmt"/>
+      </file>
+      <file name="rotary_position_embedding.ts" path="/Volumes/D/dev/tfjs-stellar/src/layers/rotary_position_embedding.ts">
+        <metrics statements="47" coveredstatements="47" conditionals="13" coveredconditionals="12" methods="10" coveredmethods="10"/>
+        <line num="1" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="6" count="181" type="stmt"/>
+        <line num="7" count="181" type="stmt"/>
+        <line num="10" count="181" type="stmt"/>
+        <line num="11" count="181" type="stmt"/>
+        <line num="14" count="181" type="stmt"/>
+        <line num="16" count="181" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
+        <line num="22" count="181" type="stmt"/>
+        <line num="27" count="181" type="stmt"/>
+        <line num="29" count="181" type="stmt"/>
+        <line num="30" count="181" type="stmt"/>
+        <line num="33" count="181" type="stmt"/>
+        <line num="35" count="181" type="stmt"/>
+        <line num="40" count="4" type="cond" truecount="0" falsecount="1"/>
+        <line num="41" count="35" type="stmt"/>
+        <line num="43" count="35" type="stmt"/>
+        <line num="48" count="35" type="stmt"/>
+        <line num="50" count="35" type="stmt"/>
+        <line num="53" count="35" type="stmt"/>
+        <line num="56" count="35" type="stmt"/>
+        <line num="84" count="4" type="stmt"/>
+        <line num="85" count="4" type="stmt"/>
+        <line num="96" count="42" type="stmt"/>
+        <line num="98" count="42" type="cond" truecount="2" falsecount="0"/>
+        <line num="99" count="1" type="stmt"/>
+        <line num="102" count="41" type="stmt"/>
+        <line num="103" count="41" type="stmt"/>
+        <line num="104" count="41" type="stmt"/>
+        <line num="106" count="41" type="stmt"/>
+        <line num="110" count="41" type="stmt"/>
+        <line num="117" count="181" type="cond" truecount="2" falsecount="0"/>
+        <line num="118" count="181" type="stmt"/>
+        <line num="120" count="181" type="cond" truecount="2" falsecount="0"/>
+        <line num="122" count="2" type="stmt"/>
+        <line num="123" count="2" type="stmt"/>
+        <line num="126" count="181" type="stmt"/>
+        <line num="135" count="35" type="stmt"/>
+        <line num="138" count="35" type="stmt"/>
+        <line num="139" count="35" type="stmt"/>
+        <line num="141" count="35" type="stmt"/>
+        <line num="142" count="35" type="stmt"/>
+        <line num="144" count="35" type="stmt"/>
+        <line num="149" count="35" type="stmt"/>
+        <line num="157" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="163" count="4" type="stmt"/>
+      </file>
+      <file name="token_and_positional_embedding.ts" path="/Volumes/D/dev/tfjs-stellar/src/layers/token_and_positional_embedding.ts">
+        <metrics statements="39" coveredstatements="38" conditionals="20" coveredconditionals="18" methods="6" coveredmethods="6"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="42" count="12" type="stmt"/>
+        <line num="44" count="12" type="stmt"/>
+        <line num="45" count="12" type="stmt"/>
+        <line num="46" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="47" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="49" count="12" type="cond" truecount="1" falsecount="1"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="53" count="12" type="stmt"/>
+        <line num="58" count="10" type="stmt"/>
+        <line num="63" count="9" type="stmt"/>
+        <line num="71" count="5" type="cond" truecount="4" falsecount="0"/>
+        <line num="72" count="1" type="stmt"/>
+        <line num="76" count="4" type="stmt"/>
+        <line num="77" count="4" type="stmt"/>
+        <line num="78" count="2" type="stmt"/>
+        <line num="80" count="2" type="stmt"/>
+        <line num="89" count="6" type="stmt"/>
+        <line num="92" count="6" type="cond" truecount="4" falsecount="0"/>
+        <line num="94" count="1" type="stmt"/>
+        <line num="95" count="5" type="cond" truecount="1" falsecount="1"/>
+        <line num="97" count="5" type="stmt"/>
+        <line num="100" count="6" type="cond" truecount="4" falsecount="0"/>
+        <line num="101" count="2" type="stmt"/>
+        <line num="107" count="4" type="stmt"/>
+        <line num="108" count="4" type="stmt"/>
+        <line num="111" count="4" type="stmt"/>
+        <line num="116" count="4" type="stmt"/>
+        <line num="125" count="1" type="stmt"/>
+        <line num="126" count="1" type="stmt"/>
+        <line num="128" count="1" type="stmt"/>
+        <line num="133" count="1" type="stmt"/>
+        <line num="135" count="1" type="stmt"/>
+        <line num="142" count="1" type="stmt"/>
+        <line num="144" count="1" type="stmt"/>
+        <line num="149" count="1" type="stmt"/>
+      </file>
+      <file name="transformer_decoder.ts" path="/Volumes/D/dev/tfjs-stellar/src/layers/transformer_decoder.ts">
+        <metrics statements="73" coveredstatements="72" conditionals="29" coveredconditionals="27" methods="9" coveredmethods="9"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="54" count="11" type="stmt"/>
+        <line num="56" count="11" type="stmt"/>
+        <line num="57" count="11" type="stmt"/>
+        <line num="58" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="59" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="60" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="62" count="11" type="cond" truecount="1" falsecount="1"/>
+        <line num="63" count="0" type="stmt"/>
+        <line num="67" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="70" count="11" type="stmt"/>
+        <line num="75" count="10" type="stmt"/>
+        <line num="76" count="10" type="stmt"/>
+        <line num="79" count="10" type="stmt"/>
+        <line num="84" count="10" type="stmt"/>
+        <line num="89" count="10" type="stmt"/>
+        <line num="90" count="10" type="stmt"/>
+        <line num="102" count="13" type="cond" truecount="5" falsecount="0"/>
+        <line num="103" count="2" type="stmt"/>
+        <line num="106" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="107" count="5" type="stmt"/>
+        <line num="111" count="11" type="stmt"/>
+        <line num="112" count="11" type="stmt"/>
+        <line num="113" count="11" type="stmt"/>
+        <line num="115" count="11" type="stmt"/>
+        <line num="121" count="11" type="stmt"/>
+        <line num="122" count="11" type="stmt"/>
+        <line num="124" count="11" type="stmt"/>
+        <line num="125" count="11" type="stmt"/>
+        <line num="126" count="11" type="stmt"/>
+        <line num="127" count="11" type="stmt"/>
+        <line num="129" count="11" type="stmt"/>
+        <line num="135" count="11" type="stmt"/>
+        <line num="136" count="11" type="stmt"/>
+        <line num="138" count="11" type="stmt"/>
+        <line num="139" count="11" type="stmt"/>
+        <line num="140" count="11" type="stmt"/>
+        <line num="141" count="11" type="stmt"/>
+        <line num="142" count="11" type="stmt"/>
+        <line num="144" count="11" type="stmt"/>
+        <line num="153" count="10" type="stmt"/>
+        <line num="155" count="10" type="cond" truecount="4" falsecount="0"/>
+        <line num="157" count="2" type="stmt"/>
+        <line num="158" count="8" type="cond" truecount="1" falsecount="1"/>
+        <line num="160" count="8" type="stmt"/>
+        <line num="163" count="10" type="cond" truecount="4" falsecount="0"/>
+        <line num="164" count="2" type="stmt"/>
+        <line num="168" count="8" type="stmt"/>
+        <line num="170" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="171" count="2" type="stmt"/>
+        <line num="176" count="6" type="stmt"/>
+        <line num="177" count="6" type="stmt"/>
+        <line num="180" count="6" type="stmt"/>
+        <line num="181" count="6" type="stmt"/>
+        <line num="183" count="6" type="stmt"/>
+        <line num="184" count="6" type="stmt"/>
+        <line num="185" count="6" type="stmt"/>
+        <line num="188" count="6" type="stmt"/>
+        <line num="200" count="6" type="stmt"/>
+        <line num="202" count="6" type="stmt"/>
+        <line num="203" count="90" type="stmt"/>
+        <line num="204" count="90" type="stmt"/>
+        <line num="205" count="90" type="stmt"/>
+        <line num="206" count="90" type="stmt"/>
+        <line num="209" count="6" type="stmt"/>
+        <line num="217" count="1" type="stmt"/>
+        <line num="219" count="1" type="stmt"/>
+        <line num="228" count="1" type="stmt"/>
+        <line num="230" count="1" type="stmt"/>
+        <line num="236" count="1" type="stmt"/>
+      </file>
+      <file name="transformer_encoder.ts" path="/Volumes/D/dev/tfjs-stellar/src/layers/transformer_encoder.ts">
+        <metrics statements="72" coveredstatements="71" conditionals="26" coveredconditionals="24" methods="9" coveredmethods="9"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="51" count="8" type="stmt"/>
+        <line num="53" count="8" type="stmt"/>
+        <line num="54" count="8" type="stmt"/>
+        <line num="55" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="56" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="57" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="58" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="59" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="61" count="8" type="cond" truecount="1" falsecount="1"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="66" count="8" type="stmt"/>
+        <line num="70" count="7" type="stmt"/>
+        <line num="71" count="7" type="stmt"/>
+        <line num="74" count="7" type="stmt"/>
+        <line num="78" count="7" type="stmt"/>
+        <line num="82" count="7" type="stmt"/>
+        <line num="83" count="7" type="stmt"/>
+        <line num="94" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="95" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="96" count="2" type="stmt"/>
+        <line num="100" count="3" type="stmt"/>
+        <line num="102" count="4" type="stmt"/>
+        <line num="106" count="7" type="stmt"/>
+        <line num="107" count="7" type="stmt"/>
+        <line num="108" count="7" type="stmt"/>
+        <line num="110" count="7" type="stmt"/>
+        <line num="116" count="7" type="stmt"/>
+        <line num="117" count="7" type="stmt"/>
+        <line num="119" count="7" type="stmt"/>
+        <line num="120" count="7" type="stmt"/>
+        <line num="121" count="7" type="stmt"/>
+        <line num="122" count="7" type="stmt"/>
+        <line num="124" count="7" type="stmt"/>
+        <line num="130" count="7" type="stmt"/>
+        <line num="131" count="7" type="stmt"/>
+        <line num="133" count="7" type="stmt"/>
+        <line num="134" count="7" type="stmt"/>
+        <line num="135" count="7" type="stmt"/>
+        <line num="136" count="7" type="stmt"/>
+        <line num="137" count="7" type="stmt"/>
+        <line num="139" count="7" type="stmt"/>
+        <line num="148" count="11" type="stmt"/>
+        <line num="150" count="11" type="cond" truecount="4" falsecount="0"/>
+        <line num="152" count="5" type="stmt"/>
+        <line num="153" count="6" type="cond" truecount="1" falsecount="1"/>
+        <line num="155" count="6" type="stmt"/>
+        <line num="159" count="11" type="cond" truecount="4" falsecount="0"/>
+        <line num="160" count="7" type="stmt"/>
+        <line num="164" count="4" type="stmt"/>
+        <line num="165" count="4" type="stmt"/>
+        <line num="168" count="4" type="stmt"/>
+        <line num="169" count="4" type="stmt"/>
+        <line num="171" count="4" type="stmt"/>
+        <line num="172" count="4" type="stmt"/>
+        <line num="173" count="4" type="stmt"/>
+        <line num="176" count="4" type="stmt"/>
+        <line num="188" count="4" type="stmt"/>
+        <line num="190" count="4" type="stmt"/>
+        <line num="191" count="64" type="stmt"/>
+        <line num="192" count="64" type="stmt"/>
+        <line num="193" count="64" type="stmt"/>
+        <line num="194" count="64" type="stmt"/>
+        <line num="197" count="4" type="stmt"/>
+        <line num="205" count="1" type="stmt"/>
+        <line num="207" count="1" type="stmt"/>
+        <line num="217" count="1" type="stmt"/>
+        <line num="219" count="1" type="stmt"/>
+        <line num="224" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

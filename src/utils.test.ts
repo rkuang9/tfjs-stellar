@@ -1,6 +1,6 @@
 import * as tf from "@tensorflow/tfjs";
 import { getScaleShape, getRandomCropStart } from "./utils";
-import { causal } from "./masks";
+
 
 // avoid TFJS node message during Jest testing
 tf.env().set('IS_NODE', false);
@@ -79,24 +79,6 @@ describe("test custom TFJS utility functions", () => {
 
         const [scale8_h, scale8_w] = getScaleShape([555, 777], [333, 555])
         expect(scale8_h).toBeLessThan(scale8_w);
-    });
-
-
-    test("causal attention map", async () => {
-        const seq_len = 4;
-        const causal_mask = causal(seq_len, seq_len);
-
-        const _ = -1e7;
-        const expected_mask = tf.tensor([
-            [0, _, _, _],
-            [0, 0, _, _],
-            [0, 0, 0, _],
-            [0, 0, 0, 0]
-        ]);
-
-        // this might fail due to precision issues on the masked positions,
-        // in which case use less <= to 6 or 12 (number of masked positions x2)
-        expect((await causal_mask.sub(expected_mask).sum().data())[0]).toEqual(0);
     });
 
 });
