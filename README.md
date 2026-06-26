@@ -1,6 +1,11 @@
 # tfjs-stellar
 An extension of TensorFlow.js for implementing large language models.
 
+# Install
+
+```bash
+npm install @stellarapp/tfjs-stellar
+```
 
 # Layers
 - MultiHeadAttention
