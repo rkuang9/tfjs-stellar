@@ -4,6 +4,7 @@ import { Dataset, type LossOrMetricFn } from "../tfjs_types";
 import { causal as generateCausalMask } from "../masks";
 import { KvCacheContainer } from "../kv_cache";
 import * as losses from "../losses";
+import * as metrics from "../metrics";
 
 
 // eslint-disable-next-line
@@ -272,7 +273,46 @@ export class LlmModel extends tf.Sequential {
             throw Error(`LlmModel.compile: use sparseCategoricalCrossentropy loss (along with onehot encoded labels) instead of categoricalCrossEntropy`)
         }
 
+        // check all provided metric strings and convert them to tfs.metrics function if possible
+        if (args.metrics) {
+            // metrics is an object/dictionary
+            if (typeof args.metrics == "object" && !Array.isArray(args.metrics)) {
+                for (let i in args.metrics) {
+                    if (typeof args.metrics[i] == "string") {
+                        // convert it to tfs.metrics if possible
+                        args.metrics[i] = (metrics as any)[args.metrics[i]] ?? args.metrics[i];
+                    }
+                }
+                throw Error(`LlmModel.compile: metrics should only be of type string | LossOrMetricFn | (string | LossOrMetricFn)[]`);
+            } else {
+                // metrics is a string | (string | function)[]
+                if (!Array.isArray(args.metrics)) {
+                    args.metrics = [args.metrics];
+                }
+
+                args.metrics = args.metrics.map(name => {
+                    if (typeof name == "string") {
+                        // convert to tfs.metrics if possible
+                        return (metrics as any)[name] ?? name;
+                    }
+
+                    return name;
+                });
+            }
+        }
+
         super.compile(args);
+    }
+
+
+    // same as base save function, but includes optimizer by default
+    public override save(handlerOrURL: tf.io.IOHandler | string, config?: tf.io.SaveConfig): Promise<tf.io.SaveResult> {
+        const include_optimizer = config?.includeOptimizer ?? true;
+
+        return super.save(handlerOrURL, {
+            ...config,
+            includeOptimizer: include_optimizer
+        });
     }
 
 

@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/layers/rotary_position_embedding.ts</title>
+    <title>Code coverage report for src/losses/dice.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/layers</a> rotary_position_embedding.ts</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/losses</a> dice.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">38.46% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>47/47</span>
+                <span class='fraction'>20/52</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">92.3% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>12/13</span>
+                <span class='fraction'>0/0</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>10/10</span>
+                <span class='fraction'>0/7</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">38.46% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>47/47</span>
+                <span class='fraction'>20/52</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -219,339 +219,318 @@
 <a name='L154'></a><a href='#L154'>154</a>
 <a name='L155'></a><a href='#L155'>155</a>
 <a name='L156'></a><a href='#L156'>156</a>
-<a name='L157'></a><a href='#L157'>157</a>
-<a name='L158'></a><a href='#L158'>158</a>
-<a name='L159'></a><a href='#L159'>159</a>
-<a name='L160'></a><a href='#L160'>160</a>
-<a name='L161'></a><a href='#L161'>161</a>
-<a name='L162'></a><a href='#L162'>162</a>
-<a name='L163'></a><a href='#L163'>163</a>
-<a name='L164'></a><a href='#L164'>164</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">5x</span>
+<a name='L157'></a><a href='#L157'>157</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">183x</span>
-<span class="cline-any cline-yes">183x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">183x</span>
-<span class="cline-any cline-yes">183x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">183x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">183x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">183x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">183x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">183x</span>
-<span class="cline-any cline-yes">183x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">183x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">183x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">36x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">36x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">36x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">36x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">36x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">36x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">43x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">43x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">42x</span>
-<span class="cline-any cline-yes">42x</span>
-<span class="cline-any cline-yes">42x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">42x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">42x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">183x</span>
-<span class="cline-any cline-yes">183x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">183x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">183x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">36x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">36x</span>
-<span class="cline-any cline-yes">36x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">36x</span>
-<span class="cline-any cline-yes">36x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">36x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">36x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import * as tf from "@tensorflow/tfjs";
-import { type LayerArgs } from "@tensorflow/tfjs-layers/dist/engine/topology";
+import { categoricalCrossentropy, binaryCrossentropy } from "@tensorflow/tfjs-layers/dist/losses";
+&nbsp;
+const epsilon = 1e-7;
+&nbsp;
+const REDUCE_HW = [1, 2]; // reduce over width and height
+const REDUCE_BHW = [0, 1, 2]; // reduce over batch, width, height
+const REDUCE_BHWC = [0, 1, 2, 3]; // reduce all dimensions
 &nbsp;
 &nbsp;
-export function applyRope(x: tf.Tensor, dim: number, cosine_cache: tf.Tensor, sine_cache: tf.Tensor) {
-    return tf.tidy(() =&gt; {
-        const seq_length = x.shape[2]!;
+// Standard (Sorensen) Dice Loss
+export function <span class="fstat-no" title="function not covered" >diceBinaryStandard(</span>y_true: tf.Tensor, y_pred: tf.Tensor): tf.Tensor {
 &nbsp;
-        // get a slice of the pre-computed cache, up to the input's sequence length
-        const cosine = cosine_cache.slice([0, 0, 0, 0], [1, 1, seq_length, dim]);
-        const sine = sine_cache.slice([0, 0, 0, 0], [1, 1, seq_length, dim]);
+    const y_true_flat = <span class="cstat-no" title="statement not covered" >tf.reshape(y_true, [y_true.shape[0], -1]);</span>
+    const y_pred_flat = <span class="cstat-no" title="statement not covered" >tf.reshape(y_pred, [y_pred.shape[0], -1]);</span>
 &nbsp;
-        // apply RoPE formula (x1 * cosine) + (rotate(-x2) * sine)
-        const rotated_x = rotateHalf(x, dim);
+    const intersection = <span class="cstat-no" title="statement not covered" >tf.sum(tf.mul(y_true_flat, y_pred_flat), 1);</span>
+    const union = <span class="cstat-no" title="statement not covered" >tf.add(tf.sum(y_true_flat, 1), tf.sum(y_pred_flat, 1));</span>
 &nbsp;
-        return tf.add(tf.mul(x, cosine), tf.mul(rotated_x, sine));
-    });
+    const dice = <span class="cstat-no" title="statement not covered" >tf.div(</span>
+        intersection.mul(2).add(epsilon),
+        union.add(epsilon)
+    );
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    return tf.scalar(1).sub(dice);</span>
 }
 &nbsp;
 &nbsp;
-export function rotateHalf(x: tf.Tensor, dim: number): tf.Tensor {
-    return tf.tidy(() =&gt; {
-        // reshape the last dimension such that adjacent coordinates are paired together
-        // [x1, x2, x3, x4] -&gt; [[x1, x2], [x3, x4]]
-        // the leading dimensions are flattened because TFJS has issues during
-        // backpropagation with 5D slicing
-        const reshaped = x.reshape([-1, dim / 2, 2]);
+// prevents minification of function name which TFJS relies on
+Object.defineProperty(diceBinaryStandard, "name", { value: "diceBinaryStandard", configurable: false });
 &nbsp;
-        const x1 = reshaped.slice([0, 0, 0], [-1, -1, 1]);
-        const x2 = reshaped.slice([0, 0, 1], [-1, -1, 1]);
 &nbsp;
-        // [x1, x2] -&gt; [-x2, x1]
-        const rotated = tf.concat([tf.neg(x2), x1], -1);
+// https://github.com/keras-team/keras/blob/v3.3.3/keras/src/losses/losses.py#L1983-L2010
+export function <span class="fstat-no" title="function not covered" >diceBinaryGlobal(</span>y_true: tf.Tensor, y_pred: tf.Tensor): tf.Tensor {
+    const y_true_flat = <span class="cstat-no" title="statement not covered" >tf.reshape(y_true, [-1]);</span>
+    const y_pred_flat = <span class="cstat-no" title="statement not covered" >tf.reshape(y_pred, [-1]);</span>
 &nbsp;
-        return rotated.reshape(x.shape);
-    });
+    const intersection = <span class="cstat-no" title="statement not covered" >tf.sum(tf.mul(y_true_flat, y_pred_flat));</span>
+    const union = <span class="cstat-no" title="statement not covered" >tf.add(tf.sum(y_true_flat), tf.sum(y_pred_flat));</span>
+&nbsp;
+    const dice = <span class="cstat-no" title="statement not covered" >tf.div(</span>
+        intersection.mul(2).add(epsilon),
+        union.add(epsilon)
+    );
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    return tf.scalar(1).sub(dice);</span>
 }
 &nbsp;
 &nbsp;
-export function createRoPECache(dim: number, max_sequence_length: number, theta: number = <span class="branch-0 cbranch-no" title="branch not covered" >10_000)</span> {
-    return tf.tidy(() =&gt; {
-        // [dim]
-        const inv_frequencies = tf.div&lt;tf.Tensor1D&gt;(1, tf.pow(
-            theta,
-            tf.range(0, Math.floor(dim / 2) * 2, 2, "float32").div(dim)));
+// prevents minification of function name which TFJS relies on
+Object.defineProperty(diceBinaryGlobal, "name", { value: "diceBinaryGlobal", configurable: false });
 &nbsp;
-        // [max_sequene_length]
-        const sequence_indices = tf.range(0, max_sequence_length);
-        // 
-        const freq = tf.outerProduct(sequence_indices, inv_frequencies);
 &nbsp;
-        // cache final shape [max_sequence_length, dim]
-        const freq_pairs = tf.stack([freq, freq], -1)
-            .reshape([max_sequence_length, dim]);
+export function <span class="fstat-no" title="function not covered" >diceCategoricalStandard(</span>y_true: tf.Tensor, y_pred: tf.Tensor): tf.Tensor {
+    const intersection = <span class="cstat-no" title="statement not covered" >tf.sum(tf.mul(y_true, y_pred), REDUCE_HW);</span>
+    const union = <span class="cstat-no" title="statement not covered" >tf.add(y_true, y_pred).sum(REDUCE_HW);</span>
 &nbsp;
-        return [
-            tf.keep(tf.cos(freq_pairs).expandDims(0).expandDims(0)),
-            tf.keep(tf.sin(freq_pairs).expandDims(0).expandDims(0))
-        ]
-    });
+    const dice = <span class="cstat-no" title="statement not covered" >tf.div(</span>
+        intersection.mul(2).add(epsilon),
+        union.add(epsilon)
+    );
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    return tf.scalar(1).sub(tf.mean(dice, -1));</span>
 }
 &nbsp;
 &nbsp;
-export interface RotaryPositionEmbeddingArgs extends LayerArgs {
-    /**
-     * The dimension of each head (rounded down), e.g. `Math.floor(embedDim / numHeads)`
-     */
-    dim: number,
-    /**
-     * The RoPE cache will be pre-calculated up to the max sequence length, and re-caculated as needed. Defaults to `4096`.
-     */
-    maxSequenceLength?: number,
-    /**
-     * The base for the geometric progression used to compute the rotation angles. Defaults to `10_000`.
-     */
-    theta?: number,
+// prevents minification of function name which TFJS relies on
+Object.defineProperty(diceCategoricalStandard, "name", { value: "diceCategoricalStandard", configurable: false });
+&nbsp;
+&nbsp;
+export function <span class="fstat-no" title="function not covered" >diceCategoricalGeneralized(</span>y_true: tf.Tensor, y_pred: tf.Tensor): tf.Tensor {
+&nbsp;
+    // this is done twice so we calculate it once
+    const y_true_sum = <span class="cstat-no" title="statement not covered" >y_true.sum(REDUCE_BHW);</span>
+&nbsp;
+    const weighting = <span class="cstat-no" title="statement not covered" >tf.div(1, y_true_sum.square().add(epsilon));</span>
+&nbsp;
+    const intersection = <span class="cstat-no" title="statement not covered" >tf.sum(tf.mul(y_true, y_pred), REDUCE_BHW).mul(weighting).sum();</span>
+    const union = <span class="cstat-no" title="statement not covered" >tf.add(y_true_sum, y_pred.sum(REDUCE_BHW)).mul(weighting).sum();</span>
+&nbsp;
+    const dice = <span class="cstat-no" title="statement not covered" >tf.div(</span>
+        intersection.mul(2).add(epsilon),
+        union.add(epsilon)
+    );
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    return tf.scalar(1).sub(dice);</span>
 }
+&nbsp;
+&nbsp;
+// prevents minification of function name which TFJS relies on
+Object.defineProperty(diceCategoricalGeneralized, "name", { value: "diceCategoricalGeneralized", configurable: false });
+&nbsp;
+&nbsp;
+export function <span class="fstat-no" title="function not covered" >diceCategoricalGlobal(</span>y_true: tf.Tensor, y_pred: tf.Tensor): tf.Tensor {
+&nbsp;
+    const intersection = <span class="cstat-no" title="statement not covered" >tf.sum(tf.mul(y_true, y_pred), REDUCE_BHWC);</span>
+    const union = <span class="cstat-no" title="statement not covered" >tf.add(tf.sum(y_true, REDUCE_BHWC), tf.sum(y_pred, REDUCE_BHWC));</span>
+&nbsp;
+    const dice = <span class="cstat-no" title="statement not covered" >tf.div(</span>
+        intersection.mul(2).add(epsilon),
+        union.add(epsilon)
+    );
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    return tf.scalar(1).sub(dice);</span>
+}
+&nbsp;
+&nbsp;
+// prevents minification of function name which TFJS relies on
+Object.defineProperty(diceCategoricalGlobal, "name", { value: "diceCategoricalGlobal", configurable: false });
 &nbsp;
 &nbsp;
 /**
- * Implements RoPE from the RoFormer: Enhanced Transformer with Rotary Position Embedding paper
- * Inspired by: https://meta-pytorch.org/torchtune/stable/_modules/torchtune/modules/position_embeddings.html#RotaryPositionalEmbeddings
+ * Calculates the Sorensen-Dice coefficient and the binary cross entropy losses.
+ * Both have equal weight.
+ * 
+ * @param y_true the label tensor
+ * @param y_pred the prediction tensor (not sparse)
+ * @returns a tensor of shape `[ batch ]`
  */
-export class RotaryPositionEmbedding extends tf.layers.Layer {
-    static className = "RotaryPositionEmbedding";
+export function <span class="fstat-no" title="function not covered" >diceBinaryCrossentropy(</span>y_true: tf.Tensor, y_pred: tf.Tensor): tf.Tensor {
+    // reduce cross entropy shape from [B, H, W] to [B] to match dice
+    const bce = <span class="cstat-no" title="statement not covered" >binaryCrossentropy(y_true, y_pred).mean(REDUCE_HW);</span>
+    const dice = <span class="cstat-no" title="statement not covered" >diceBinaryStandard(y_true, y_pred);</span>
 &nbsp;
-    protected dim: number;
-    protected max_sequence_length: number;
-    protected theta: number;
-&nbsp;
-    // cached sine and cosine frequencies, untrainable weights
-    protected cosine_cache: tf.LayerVariable;
-    protected sine_cache: tf.LayerVariable;
-&nbsp;
-    constructor({ dim, maxSequenceLength = 4096, theta = 10_000, ...args }: RotaryPositionEmbeddingArgs) {
-        super(args);
-&nbsp;
-        if (dim % 2 !== 0) {
-            throw Error(`${this.getClassName()}::constructor ${this.name} expected dim to be even, got ${dim}`);
-        }
-&nbsp;
-        this.dim = dim;
-        this.max_sequence_length = maxSequenceLength;
-        this.theta = theta;
-&nbsp;
-        this.cosine_cache = this.addWeight("sine_cache",
-            [1, 1, maxSequenceLength, Math.floor(this.dim)],
-            "float32", tf.initializers.zeros(), undefined, false);
-&nbsp;
-        this.sine_cache = this.addWeight("cosine_cache",
-            [1, 1, maxSequenceLength, Math.floor(this.dim)],
-            "float32", tf.initializers.zeros(), undefined, false);
-    }
-&nbsp;
-&nbsp;
-    override call(inputs: tf.Tensor | tf.Tensor[], kwargs: any): tf.Tensor | tf.Tensor[] {
-        const shape = Array.isArray(inputs) ? inputs[0].shape : inputs.shape;
-        const seq_length = shape[2];
-&nbsp;
-        if (seq_length &gt; this.max_sequence_length) {
-            // expand cache to the nearest power of 2
-            this.max_sequence_length = Math.pow(2, Math.ceil(Math.log2(seq_length)));
-            this.build([]);
-        }
-&nbsp;
-        return applyRope(
-            Array.isArray(inputs) ? inputs[0] : inputs,
-            this.dim,
-            this.cosine_cache.read(),
-            this.sine_cache.read())
-    }
-&nbsp;
-&nbsp;
-    override build(input_shape: tf.Shape | tf.Shape[]) {
-        const [cosine, sine] = createRoPECache(
-            this.dim, this.max_sequence_length, this.theta);
-&nbsp;
-        this.cosine_cache.dispose();
-        this.sine_cache.dispose();
-&nbsp;
-        this.cosine_cache = new tf.LayerVariable(cosine);
-        this.sine_cache = new tf.LayerVariable(sine);
-&nbsp;
-        this.nonTrainableWeights = [
-            new tf.LayerVariable(cosine),
-            new tf.LayerVariable(sine)
-        ];
-&nbsp;
-        this.setWeights([cosine, sine]);
-    }
-&nbsp;
-&nbsp;
-    /**
-     * Output shape: [batch, head, sequence, head_dim]
-     */
-    public computeOutputShape(input_shape: tf.Shape | tf.Shape[]) {
-        return Array.isArray(input_shape[0])
-            ? input_shape[0] as tf.Shape
-            : input_shape as tf.Shape;
-    }
+<span class="cstat-no" title="statement not covered" >    return tf.add(bce.mul(0.5), dice.mul(0.5));</span>
 }
 &nbsp;
-tf.serialization.registerClass(RotaryPositionEmbedding);
+&nbsp;
+// prevents minification of function name which TFJS relies on
+Object.defineProperty(diceBinaryCrossentropy, "name", { value: "diceBinaryCrossentropy", configurable: false });
+&nbsp;
+&nbsp;
+/**
+ * Calculates the Sorensen-Dice coefficient and the categorical cross entropy losses.
+ * Both have equal weight. Expects dense (non-sparse) label tensors.
+ * 
+ * This does not support sparse tensors because TFJS's
+ * sparseCategoricalCrossentropy loss onehots the label
+ * and calls categoricalCrossentropy. See
+ * https://github.com/tensorflow/tfjs/blob/0fc04d958ea592f3b8db79a8b3b497b5c8904097/tfjs-layers/src/losses.ts#L143-L146
+ * 
+ * @param y_true the label  
+ * @param y_pred the prediction tensor (not sparse)
+ * @returns a tensor of shape `[ batch ]`
+ */
+export function <span class="fstat-no" title="function not covered" >diceCategoricalCrossentropy(</span>y_true: tf.Tensor, y_pred: tf.Tensor): tf.Tensor {
+    // reduce cross entropy shape from [B, H, W] to [B] to match dice
+    const cce = <span class="cstat-no" title="statement not covered" >categoricalCrossentropy(y_true, y_pred).mean(REDUCE_HW);</span>
+    const dice = <span class="cstat-no" title="statement not covered" >diceCategoricalStandard(y_true, y_pred);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    return tf.add(cce.mul(0.5), dice.mul(0.5));</span>
+}
+&nbsp;
+&nbsp;
+// prevents minification of function name which TFJS relies on
+Object.defineProperty(diceCategoricalCrossentropy, "name", { value: "diceCategoricalCrossentropy", configurable: false });
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->

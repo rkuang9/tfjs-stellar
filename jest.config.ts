@@ -12,10 +12,14 @@ const config: Config = {
 
     // A map from regular expressions to paths to transformers
     transform: {
-        "^.+\.ts?$": ["ts-jest", {
-            useESM: true
-        }],
+        "^.+\\.[jt]s?$": ["ts-jest", {
+            useESM: true,
+        }]
     },
+
+    transformIgnorePatterns: [
+        "/node_modules/(?!(@tensorflow/tfjs))"
+    ],
 
     // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
     // testPathIgnorePatterns: [

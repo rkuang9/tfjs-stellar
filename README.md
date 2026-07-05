@@ -18,7 +18,7 @@ npm install @stellarapp/tfjs-stellar
 - TokenAndPositionalEmbedding
 
 > **Warning**:
-> These layers are not compatible with the TensorFlow Keras equivalent.
+> These layers are not compatible with their TensorFlow Keras equivalent.
 
 
 ## Models
@@ -53,10 +53,9 @@ gpt_model.summary();
 
 ## Jest Unit Testing
 
-If you plan to use this library in your Jest unit tests, you may need to add the following configurations to your `jest.config.ts` file's `config`
+If you plan to use this library in your Jest unit tests, you may need to add or update the following configurations in your `jest.config.ts` file's `config`
 
 ```ts
-// A map from regular expressions to paths to transformers
 transform: {
     '^.+\\.[jt]s?$': ["ts-jest", {
         useESM: true,
