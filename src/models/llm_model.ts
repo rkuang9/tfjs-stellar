@@ -268,6 +268,12 @@ export class LlmModel extends tf.Sequential {
     }
 
 
+    /**
+     * Set the model's optimizer, loss, and metrics. Supports serialization for
+     * tfjs-stellar metrics.
+     * 
+     * TODO: do the same for optimizers and loss
+     */
     override compile(args: tf.ModelCompileArgs): void {
         if (args.loss == "categoricalCrossentropy") {
             throw Error(`LlmModel.compile: use sparseCategoricalCrossentropy loss (along with onehot encoded labels) instead of categoricalCrossEntropy`)

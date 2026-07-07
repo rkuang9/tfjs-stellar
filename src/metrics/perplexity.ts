@@ -3,7 +3,7 @@ import { sparseCategoricalCrossentropy } from "@tensorflow/tfjs-layers/dist/loss
 
 
 export function perplexity(y_true: tf.Tensor, y_pred: tf.Tensor): tf.Tensor {
-    return tf.exp(sparseCategoricalCrossentropy(y_true, y_pred));
+    return tf.exp(sparseCategoricalCrossentropy(y_true, y_pred).mean());
 }
 
 
